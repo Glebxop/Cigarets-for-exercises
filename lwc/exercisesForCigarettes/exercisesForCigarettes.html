@@ -1,0 +1,9 @@
+<template>
+    <div class="slds-grid slds-wrap">
+    <template for:each={exercises} for:item="exercise">
+        <div class="slds-col slds-size_1-of-3 " key={exercise.id}>
+            <c-exercise-card key={exercise.id} exercise={exercise}></c-exercise-card>
+        </div>
+    </template>
+    </div>
+</template>
