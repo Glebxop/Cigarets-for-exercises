@@ -154,9 +154,9 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Quantity_for_cigarette__c</fullName>
+        <fullName>Count__c</fullName>
         <externalId>false</externalId>
-        <label>Quantity for cigarette</label>
+        <label>Count</label>
         <precision>18</precision>
         <required>true</required>
         <scale>0</scale>
@@ -164,12 +164,13 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <label>Exercise</label>
+    <label>Cigarette</label>
     <nameField>
-        <label>Excercise Name</label>
-        <type>Text</type>
+        <displayFormat>Example:  C-{0000}</displayFormat>
+        <label>Cigarette</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Exercises</pluralLabel>
+    <pluralLabel>Cigarettes</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
