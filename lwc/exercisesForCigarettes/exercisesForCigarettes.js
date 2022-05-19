@@ -4,12 +4,14 @@
 
 import {LightningElement, wire} from 'lwc';
 import getExercises from '@salesforce/apex/ExerciseForCigaretteController.getExercises';
+import channelName from '@salesforce/messageChannel/channelReference';
+
 
 export default class ExercisesForCigarettes extends LightningElement {
     exercises;
 
     @wire(getExercises)
-    wiredAccounts({data, error}) {
+    wiredExercises({data, error}) {
         if (data) {
             console.log('DATA')
             this.exercises = data;
